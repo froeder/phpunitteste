@@ -1,5 +1,8 @@
 Links 
 
-Introdução PHPUnit
+Introduï¿½ï¿½o PHPUnit
 https://phpunit.de/getting-started/phpunit-7.html
 https://phpunit.readthedocs.io/pt_BR/latest/writing-tests-for-phpunit.html
+
+Instalar DbUnit
+https://github.com/sebastianbergmann/dbunit#php-archive-phar
