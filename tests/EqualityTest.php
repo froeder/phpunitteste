@@ -1,7 +1,7 @@
 <?php
 use PHPUnit\Framework\TestCase;
 
-class ArrayDiffTest extends TestCase
+class EqualityTest extends TestCase
 { 
     public function soma($na, $nb){
         $a = $na ;
