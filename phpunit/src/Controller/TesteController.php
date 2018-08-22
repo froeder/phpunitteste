@@ -13,8 +13,14 @@
 
         public function index(){
            $resultado = $this->soma(1,1);
-
+           $esperado = 2 ;
            $this->set('resultado', $resultado);
+           $this->set('esperado', $esperado);
+
+           $resultado2 = $this->soma(1,4);
+           $esperado2 = 5 ;
+           $this->set('esperado2' , $esperado2);
+           $this->set('resultado2', $resultado2);
         }
 
 
