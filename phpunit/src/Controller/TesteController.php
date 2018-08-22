@@ -6,9 +6,23 @@
     class TesteController extends AppController
     {
         public function soma($n1, $n2){
-            $this->set('n1', $n1);
-            $this->set('n2', $n2);
-            return $n1 + $n2 ;
+            $resultadoSoma = $n1 + $n2 ;
+            return $resultadoSoma ;
+        }
+
+        public function divisao($n1, $n2){
+            $resultadoDivisao = $n1 / $n2 ;
+            return $resultadoDivisao ;
+        }
+
+        public function multiplicacao($n1, $n2){
+            $resultadoMultiplicacao = $n1 * $n2 ;
+            return $resultadoMultiplicacao ;
+        }
+
+        public function subtracao($n1, $n2){
+            $resultadoSubtracao = $n1 - $n2 ;
+            return $resultadoSubtracao ;
         }
 
         public function index(){
@@ -16,12 +30,5 @@
            $esperado = 2 ;
            $this->set('resultado', $resultado);
            $this->set('esperado', $esperado);
-
-           $resultado2 = $this->soma(1,4);
-           $esperado2 = 5 ;
-           $this->set('esperado2' , $esperado2);
-           $this->set('resultado2', $resultado2);
         }
-
-
     }

@@ -10,9 +10,6 @@
             <td><?= $esperado ?></td>
             <td><?= $resultado ?></td>
         </tr>
-        <tr>
-            <td><?= $esperado2 ?></td>
-            <td><?= $resultado2 ?></td>
-        </tr>
+
     </table>
 </div>

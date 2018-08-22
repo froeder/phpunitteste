@@ -9,33 +9,36 @@ use Cake\TestSuite\IntegrationTestCase;
  */
 class TesteControllerTest extends IntegrationTestCase
 {
-
-    /**
-     * Fixtures
-     *
-     * @var array
-     */
-    public $fixtures = [
-        'app.teste'
-    ];
-
-    /**
-     * Test soma method
-     *
-     * @return void
-     */
-    public function testSoma()
-    {
-        $this->markTestIncomplete('Not implemented yet.');
-    }
-
     /**
      * Test index method
      *
      * @return void
      */
-    public function testIndex()
+    public function testSoma()
     {
-        $this->markTestIncomplete('Not implemented yet.');
+        $classe = new TesteController();
+        $resultado = $classe->soma(1,1);
+        $this->assertEquals($resultado, 2 );
+    }
+
+    public function testDivisao()
+    {
+        $classe = new TesteController();
+        $resultado = $classe->divisao(10,2);
+        $this->assertEquals($resultado, 5 );
+    }
+
+    public function testSubtracao()
+    {
+        $classe = new TesteController();
+        $resultado = $classe->subtracao(1,1);
+        $this->assertEquals($resultado, 0 );
+    }
+
+    public function testMultiplicacao()
+    {
+        $classe = new TesteController();
+        $resultado = $classe->multiplicacao(1,1);
+        $this->assertEquals($resultado, 1 );
     }
 }
